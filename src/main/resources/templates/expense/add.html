@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/main}">
+<div layout:fragment="content">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h3>Add New Expense</h3>
+            <form th:action="@{/expenses/add}" th:object="${expense}" method="post">
+                <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+                <div class="mb-3">
+                    <label>Expense Name:</label>
+                    <input class="form-control" th:field="*{name}" required/>
+                </div>
+                <div class="mb-3">
+                    <label>Amount:</label>
+                    <input class="form-control" type="number" step="0.01" th:field="*{amount}" required/>
+                </div>
+                <div class="mb-3">
+                    <label>Date:</label>
+                    <input class="form-control" type="date" th:field="*{date}" required/>
+                </div>
+                <div class="mb-3">
+                    <label>Description:</label>
+                    <textarea class="form-control" th:field="*{description}"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Add Expense</button>
+            </form>
+            <!-- Example Card from PDF -->
+            <div class="card mt-4">
+                <div class="card-header bg-light">
+                    <strong>Example</strong>
+                </div>
+                <div class="card-body">
+                    <div><strong>Expense Name:</strong> Lunch with Friends</div>
+                    <div><strong>Amount:</strong> 15.00</div>
+                    <div><strong>Date:</strong> 09-08-2024</div>
+                    <div><strong>Description:</strong> Lunch at the downtown café.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
