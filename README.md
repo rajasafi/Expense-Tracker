@@ -53,11 +53,12 @@
 ### Installation
 
 1. **Clone the repository**
+```git
 git clone https://github.com/rajasafi/Expense-Tracker.git
 cd Expense-Tracker
+```
 
-
-2. **Configure Database**
+3. **Configure Database**
 >Create a MySQL database and update `application.properties`:
 >spring.datasource.url=jdbc:mysql://localhost:3306/expense_tracker
 >spring.datasource.username=your_username
