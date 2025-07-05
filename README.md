@@ -58,18 +58,18 @@ cd Expense-Tracker
 
 
 2. **Configure Database**
-Create a MySQL database and update `application.properties`:
-spring.datasource.url=jdbc:mysql://localhost:3306/expense_tracker
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+- **Create a MySQL database and update `application.properties`:**
+- **spring.datasource.url=jdbc:mysql://localhost:3306/expense_tracker**
+- **spring.datasource.username=your_username**
+- **spring.datasource.password=your_password**
 
 3. **Install Dependencies**
-mvn clean install
+>mvn clean install
 
 
 
 4. **Run the Application**
-mvn spring-boot:run
+>mvn spring-boot:run
 
 
 
