@@ -53,6 +53,32 @@
 ### Installation
 
 1. **Clone the repository**
+git clone https://github.com/rajasafi/Expense-Tracker.git
+cd Expense-Tracker
+
+
+2. **Configure Database**
+Create a MySQL database and update `application.properties`:
+spring.datasource.url=jdbc:mysql://localhost:3306/expense_tracker
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+3. **Install Dependencies**
+mvn clean install
+
+
+
+4. **Run the Application**
+mvn spring-boot:run
+
+
+
+5. **Access the Application**
+Open your browser and navigate to `http://localhost:8080`
+
+format this code properly for readme in one frame
+
+1. **Clone the repository**
 2. **git clone https://github.com/rajasafi/Expense-Tracker.git**
 3. **cd Expense-Tracker**
 
