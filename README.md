@@ -127,7 +127,7 @@ jwt.expiration=86400000
 
 
 
-## 🎨 Screenshots
+## 🎨 UI Of Project
 
 ### Login Page
 Clean and secure authentication interface with dual login options.
@@ -137,7 +137,8 @@ Clean and secure authentication interface with dual login options.
 Comprehensive overview showing:
 - Total Expenses: 5 recorded expenses
 - Total Amount: ₹55,900.00
-- Last Expense: Pizza - ₹50,000.00
+- Last Expense: Pizza - ₹50,000.00   
+![Dashboard UI](https://i.imghippo.com/files/UeoW6077Qs.png)
 
 ### Add Expense
 Intuitive form with fields for:
@@ -145,12 +146,14 @@ Intuitive form with fields for:
 - Amount
 - Date
 - Description
+![Add Expense UI](https://i.imghippo.com/files/lQLh9122oSo.png)
 
 ### Expense List
 Complete expense management with:
 - Searchable expense list
 - Edit/Delete functionality
 - Category-based filtering
+![All Expense List UI](https://i.imghippo.com/files/poF7828DVQ.png)
 
 ## 🔐 Security Features
 
@@ -160,14 +163,22 @@ Complete expense management with:
 - **Session Management**: Traditional session-based authentication
 - **CSRF Protection**: Cross-site request forgery protection
 - **Input Validation**: Server-side validation for all inputs
+  
 
-## 🧪 Testing
+## 🙏 Acknowledgments
 
-### Run Tests
+- [Spring Boot Documentation](https://spring.io/projects/spring-boot) for excellent framework documentation
+- [Bootstrap](https://getbootstrap.com/) for responsive UI components
+- [Thymeleaf](https://www.thymeleaf.org/) for powerful template engine
+- [JWT.io](https://jwt.io/) for JWT implementation guidance
+
+---
+
+⭐ **If you found this project helpful, please give it a star!** ⭐
+
+---
+
+Made with ❤️ by [Rajasafi](https://github.com/rajasafi)
 
 
-
-```git
-
-```
 
