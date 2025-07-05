@@ -53,33 +53,121 @@
 ### Installation
 
 1. **Clone the repository**
-```git
+```bash
 git clone https://github.com/rajasafi/Expense-Tracker.git
 cd Expense-Tracker
 ```
 
 3. **Configure Database**
->Create a MySQL database and update `application.properties`:
->spring.datasource.url=jdbc:mysql://localhost:3306/expense_tracker
->spring.datasource.username=your_username
->spring.datasource.password=your_password
+```bash
+Create a MySQL database and update `application.properties`:
+spring.datasource.url=jdbc:mysql://localhost:3306/expense_tracker
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
 
 3. **Install Dependencies**
->mvn clean install
-
+```bash
+mvn clean install
+```
 
 
 4. **Run the Application**
->mvn spring-boot:run
-
+```bash
+mvn spring-boot:run
+```
 
 
 5. **Access the Application**
-Open your browser and navigate to `http://localhost:8080`
+- ** Open your browser and navigate to `http://localhost:8080`**
 
-format this code properly for readme in one frame
 
-1. **Clone the repository**
-2. **git clone https://github.com/rajasafi/Expense-Tracker.git**
-3. **cd Expense-Tracker**
+
+## 🔧 Configuration
+
+### Database Configuration
+```git
+  spring.datasource.url=jdbc:mysql://localhost:3306/expense_tracker
+  spring.datasource.username=your_username
+  spring.datasource.password=your_password
+  spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+```
+
+### JPA/Hibernate Configuration
+```git
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+```
+
+### JWT Configuration
+```git
+jwt.secret=your-secret-key
+jwt.expiration=86400000
+```
+
+
+## 🎯 API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - User registration
+- `POST /api/auth/login` - User login (returns JWT token)
+- `POST /api/auth/logout` - User logout
+
+### Expense Management
+- `GET /api/expenses` - Get all expenses
+- `POST /api/expenses` - Create new expense
+- `GET /api/expenses/{id}` - Get expense by ID
+- `PUT /api/expenses/{id}` - Update expense
+- `DELETE /api/expenses/{id}` - Delete expense
+
+### Dashboard
+- `GET /api/dashboard/summary` - Get expense summary
+- `GET /api/dashboard/analytics` - Get spending analytics
+
+
+
+## 🎨 Screenshots
+
+### Login Page
+Clean and secure authentication interface with dual login options.
+![Log In UI](https://i.imghippo.com/files/YwV9056O.png)
+
+### Dashboard
+Comprehensive overview showing:
+- Total Expenses: 5 recorded expenses
+- Total Amount: ₹55,900.00
+- Last Expense: Pizza - ₹50,000.00
+
+### Add Expense
+Intuitive form with fields for:
+- Expense Name
+- Amount
+- Date
+- Description
+
+### Expense List
+Complete expense management with:
+- Searchable expense list
+- Edit/Delete functionality
+- Category-based filtering
+
+## 🔐 Security Features
+
+- **Spring Security**: Comprehensive security configuration
+- **Password Encryption**: BCrypt password hashing
+- **JWT Authentication**: Stateless token-based authentication
+- **Session Management**: Traditional session-based authentication
+- **CSRF Protection**: Cross-site request forgery protection
+- **Input Validation**: Server-side validation for all inputs
+
+## 🧪 Testing
+
+### Run Tests
+
+
+
+```git
+
+```
 
